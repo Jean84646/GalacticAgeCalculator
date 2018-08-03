@@ -4,25 +4,33 @@ export class galacticAgeCalculator {
     this.birthday = birthday;
   }
 
-  ageInSeconds(){
+  ageInSeconds() {
     debugger;
     return this.age * 365 * 24 * 3600;
   }
 
-  mercuryYears(){
+  mercuryYears() {
     return this.age * .24;
   }
 
-  venusYears(){
+  venusYears() {
     return this.age * .62;
   }
 
-  marsYears(){
+  marsYears() {
     return this.age * 1.88;
   }
 
-  jupiterYears(){
+  jupiterYears() {
     return this.age * 11.86;
+  }
+
+  expectToLive(lifeExpectancy) {
+    if (this.age < lifeExpectancy) {
+      return lifeExpectancy - this.age;
+    } else {
+      return this.age - lifeExpectancy;
+    }
   }
 
 }

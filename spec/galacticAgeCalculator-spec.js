@@ -32,15 +32,15 @@ describe('galacticAgeCalculator', function() {
     expect(testUser.jupiterYears()).toEqual(11.86);
   });
 
-  // it('should find years left to live', function() {
-  //   let lifeExpectancy = 100;
-  //   expect(testUser.expectToLive()).toEqual(99);
-  // });
+  it('should find years left to live', function() {
+    let lifeExpectancy = 100;
+    expect(testUser.expectToLive(lifeExpectancy)).toEqual(99);
+  });
 
-  // it('should find years exceeds life expectancy', function() {
-  //   let testUserTwo = new galacticAgeCalculator(101, "1918-8-3");
-  //   let lifeExpectancy = 100;
-  //   expect(testUser.expectToLive()).toEqual(99);
-  // });
+  it('should find years exceeds life expectancy', function() {
+    let testUserTwo = new galacticAgeCalculator(101, "1918-8-3");
+    let lifeExpectancy = 100;
+    expect(testUserTwo.expectToLive(lifeExpectancy)).toEqual(1);
+  });
 
 });

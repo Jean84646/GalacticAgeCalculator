@@ -8,7 +8,7 @@ describe('galacticAgeCalculator', function() {
   });
 
   it('should convert age in years into seconds', function() {
-    expect(testUser.toSecond()).toEqual(31536000);
+    expect(testUser.ageToSecond()).toEqual(31536000);
   });
 
   it('should find the difference between two dates in seconds', function() {

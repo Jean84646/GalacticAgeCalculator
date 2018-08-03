@@ -16,31 +16,31 @@ describe('galacticAgeCalculator', function() {
   //   expect(compareDate(testUser.birthday, currentDate).toEqual(31536000);
   // });
 
-  it('should find age in in Mercury years in seconds', function() {
-    expect(testUser.toSecond().mercuryYears()).toEqual(.24);
+  it('should find age in Mercury years in seconds', function() {
+    expect(testUser.mercuryYears()).toEqual(.24);
   });
 
-  it('should find age in in Venus years in seconds', function() {
-    expect(testUser.toSecond().venusYears()).toEqual(.62);
+  it('should find age in Venus years in seconds', function() {
+    expect(testUser.venusYears()).toEqual(.62);
   });
 
-  it('should find age in in Mars years in seconds', function() {
-    expect(testUser.toSecond().marsYears()).toEqual(1.88);
+  it('should find age in Mars years in seconds', function() {
+    expect(testUser.marsYears()).toEqual(1.88);
   });
 
-  it('should find age in in Jupiter years in seconds', function() {
-    expect(testUser.toSecond().jupiterYears()).toEqual(11.86);
+  it('should find age in Jupiter years in seconds', function() {
+    expect(testUser.jupiterYears()).toEqual(11.86);
   });
 
-  it('should find years left to live', function() {
-    let lifeExpectancy = 100;
-    expect(testUser.expectToLive()).toEqual(99);
-  });
+  // it('should find years left to live', function() {
+  //   let lifeExpectancy = 100;
+  //   expect(testUser.expectToLive()).toEqual(99);
+  // });
 
-  it('should find years exceeds life expectancy', function() {
-    let testUserTwo = new galacticAgeCalculator(101, "1918-8-3");
-    let lifeExpectancy = 100;
-    expect(testUser.expectToLive()).toEqual(99);
-  });
+  // it('should find years exceeds life expectancy', function() {
+  //   let testUserTwo = new galacticAgeCalculator(101, "1918-8-3");
+  //   let lifeExpectancy = 100;
+  //   expect(testUser.expectToLive()).toEqual(99);
+  // });
 
 });

@@ -9,4 +9,20 @@ export class galacticAgeCalculator {
     return this.age * 365 * 24 * 3600;
   }
 
+  mercuryYears(){
+    return this.age * .24;
+  }
+
+  venusYears(){
+    return this.age * .62;
+  }
+
+  marsYears(){
+    return this.age * 1.88;
+  }
+
+  jupiterYears(){
+    return this.age * 11.86;
+  }
+
 }
